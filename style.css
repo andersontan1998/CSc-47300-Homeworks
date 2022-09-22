@@ -1,137 +1,59 @@
-body {
-  font-family: Arial, sans-serif;
-  color: #1a1b1d;
-  font-size: 10pt;
+.assignmentRow{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:flex-start;
+	border-bottom:1px dashed rgb(105, 102, 102);
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+.assignmentImg {
+    width:150px;
+    height:150px;
+    border-style: solid;
+    border-color: #60a2d8;
+    border-width: thin;
+    border-radius: 20px;
+}
+.assignmentImg img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.assignmentSummary{	
+    flex:1;
+    padding:0 20px;
+    font-family: 'Calibri';
+}
+.assignmentHeader{
+    margin:0;
+    padding:0;
+    font-family: 'Calibri';
+}
+.assignmentDate{
+
 }
 
-h1 {
-  font-size: 42pt;
-  margin: 5px;
+.redirectButton {
+    background-color: #60a2d8;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 50px;
 }
 
-h3 {
-  margin: 30px 0px 10px 45px;
-  color: #d93025;
-  font-weight:normal;
-  padding-bottom: 20px;
-}
-
-h4 {
-  font-weight:normal;
-  font-size: 14px;
-}
-
-h5 {
-  font-weight:normal;
-  font-size: 12px;
-}
-
-.tutorialfont{
-  font-family: monospace;
-}
-
-.navbar {
-  text-align: right;
-}
-.navbar li {
-  display: inline-block;
-  padding: 10px;
-}
-.navbar a {
-  color: #565962;
-}
-.navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited {
-  text-decoration: none;
-}
-.navbar a:active, .navbar a:hover {
-  text-decoration: underline;
-}
-
-.searchbar {
-  border-color: #8c8c8c;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 20px;
-  display: block;
-  margin: auto;
-  padding: 10px;
-  padding-left: 25px;
-  width: 500px;
-}
-
-.searchicon{
-  background: url("magIcon.png") no-repeat left;
-  background-size: 20px;
-  background-origin: padding-box;
-}
-
-.googleiconsmall{
-  float: left;
-  width: 90px;
-  height: 30px;
-  padding-left: 10px;
-}
-
-
-@media only screen and (max-width: 550px) {
-  .searchbar {
-    width: 90%;
+.redirectButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
-}
-
-.searchbarsmall {
-  display: block;
-  margin: 5px;
-  padding: 5px;
-  width: 400px;
-}
-
-@media only screen and (max-width: 768px) {
-  .searchbarsmall {
-    width: 190px;
-  }
-}
-
-.searchbutton {
-  background-color: #f3f5f7;
-  border-style: none;
-  margin: 11px 4px;
-  padding: 8px 16px;
-  border-radius: 3px;
-}
-
-.text-input-table {
-  margin: 15px 45px;
-}
-
-.text-input-table tr {
-  font-size: 10pt;
-}
-
-.text-input-table tr td .searchbutton {
-  float: right;
-  background-color: #4c8ef9;
-  color: #fefefe;
-}
-
-.centered-search {
-  margin-top: 150px;
-  text-align: center;
-}
-
-@media only screen and (max-height: 500px) {
-  .vertical-center {
-    margin-top: 15px;
-  }
-}
-
-.searchbarsmall:hover, .searchbarsmall:focus {
-  box-shadow: 0 0 1px 1px #aaaaaa;
-  outline: none;
-}
-
-.searchbar:hover, .searchbar:focus, .searchbutton:hover {
-  box-shadow: 0 0 2px 1px #aaaaaa;
-  outline: none;
-}
 
