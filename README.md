@@ -2,6 +2,16 @@
 Repository will contain all homework assignments for this semester.</br>
 Professor Kwame Baffour
 
+## Homework 2 - Google Calculator Clone
+- [x] Using HTML, CSS, Bootstrap, CSS Grid or Flexbox, build the google calculator interface.
+
+
+     - [x] Use Javascript to add functionality and logic to the buttons.
+     - [x] Functionalities include add, subtract, multiply, divide, log, EXP, ln, power, sqrt, cosine, sine, tangent, factorial, and percent.
+
+Link to Assignment Homepage: https://andersontan1998.github.io/CSc-47300-Homeworks/ </br>
+Link to Homework 2: https://andersontan1998.github.io/CSc-47300-Homeworks/google-calculator.html </br>
+
 ## Homework 1 - Google Search
 - [x] Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
 
