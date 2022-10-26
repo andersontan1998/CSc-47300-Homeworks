@@ -1,0 +1,131 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="google-calc-style.css"/>
+    </head>
+    
+    <body>
+        <div>
+            <div style="margin:auto; font-family: Calibri, sans-serif; padding: 30px; text-align: center"> 
+                <h2>Google Calculator Clone<br></h2>
+                <div>One input operations: click the number before the operator. <br><br>
+                Two input operations: click a number, an operator, and then a number.<br><br>
+                Click the Rad button to change between Radians and Degrees for Sine, Cosine, and Tangent.
+                </div>
+            </div>   
+            <table>
+                <tr>
+                    <td colspan="6">
+                        <input type="text" id="display" value="" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tooltip"> 
+                            <span class="tooltiptext">Click to change between Radians and Degrees</span>
+                            <input id="btnRadDeg" type="button" name="operator" value="Rad" onclick="radianToDegree()"/>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="btnFactorial" type="button" name="operator" value="x!" onclick="factorial()"/>
+                    </td>
+                    <td>
+                        <input id="btnOpenParen" type="button" name="operator" value="(" onclick="set('(')" />
+                    </td>
+                    <td>
+                        <input id="btnClosedParen" type="button" name="operator" value=")" onclick="set(')')" />
+                    </td>
+                    <td>
+                        <input id="btnPercent" type="button" name="operator" value="%" onclick="percent()"/>
+                    </td>
+                    <td>
+                        <input id="btnAllClear" type="button" name="operator" value="AC" onclick="ac()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="btnSine" type="button" name="operator" value="sin" onclick="sine()" />
+                    </td>
+                    <td>
+                        <input id="btnLn" type="button" name="operator" value="ln" onclick="ln()"/>
+                    </td>
+                    <td>
+                        <input id="btn7" type="button" value="7" onclick="set('7')" />
+                    </td>
+                    <td>
+                        <input id="btn8" type="button" value="8" onclick="set('8')" />
+                    </td>
+                    <td>
+                        <input id="btn9" type="button" value="9" onclick="set('9')" />
+                    </td>
+                    <td>
+                        <input id="btnDivide" type="button" name="operator" value="÷" onclick="set('/')" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="btnCosine" type="button" name="operator" value="cos" onclick="cosine()" />
+                    </td>
+                    <td>
+                        <input id="btnLog" type="button" name="operator" value="log" onclick="logBase10()" />
+                    </td>
+                    <td>
+                        <input id="btn4" type="button" value="4" onclick="set('4')" />
+                    </td>
+                    <td>
+                        <input id="btn5" type="button" value="5" onclick="set('5')" />
+                    </td>
+                    <td>
+                        <input id="btn6" type="button" value="6" onclick="set('6')" />
+                    </td>
+                    <td>
+                        <input id="btnMultiply" type="button" name="operator" value="×" onclick="set('*')" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="btnTangent" type="button" name="operator" value="tan" onclick="tangent()" />
+                    </td>
+                    <td>
+                        <input id="btnSqrt" type="button" name="operator" value="√" onclick="sqrt()" />
+                    </td>
+                    <td>
+                        <input id="btn1" type="button" value="1" onclick="set('1')" />
+                    </td>
+                    <td>
+                        <input id="btn2" type="button" value="2" onclick="set('2')" />
+                    </td>
+                    <td>
+                        <input id="btn3" type="button" value="3" onclick="set('3')" />
+                    </td>
+                    <td>
+                        <input id="btnSubtract" type="button" name="operator" value="-" onclick="set('-')" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="btnE" type="button" name="operator" value="EXP" onclick="set('E')" />
+                    </td>
+                    <td>
+                        <input id="btnPower" type="button" name="operator" value="x^y" onclick="set('^')"/>
+                    </td>
+                    <td>
+                        <input id="btn0" type="button" value="0" onclick="set('0')" />
+                    </td>
+                    <td>
+                        <input id="btnDecimal" type="button" value="." onclick="set('.')" />
+                    </td>
+                    <td>
+                        <input id="btnEqual" type="button" name="equal" value="=" onclick="answer()" />
+                    </td>
+                    <td>
+                        <input id="btnAddition" type="button" name="operator" value="+" onclick="set('+')" />
+                    </td>
+            </table>
+        </div>
+        <script src="google-calculator.js"></script>
+    </body>
+
+</html>
